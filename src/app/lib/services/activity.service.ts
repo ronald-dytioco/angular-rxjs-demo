@@ -10,8 +10,8 @@ export default class ActivityService {
   constructor(private http: HttpClient) {}
 
   getActivities(): Observable<IActivity[]> {
-    // Make an array of http.get() Observables, 10 items
-    const obsArray: Observable<IActivity>[] = Array(10).fill(
+    // Make an array of http.get() Observables, 12 items
+    const obsArray: Observable<IActivity>[] = Array(12).fill(
       this.http.get<IActivity[]>(this.apiUrl)
     );
 
